@@ -2,9 +2,8 @@ RPM Spec files for building correct Oracle JVM RPM packages based on jpackage sp
 files. 
 Preparations:
 
-```
-sudo yum -y install rpmdevtools && rpmdev-setuptree
-```
+    sudo yum -y install rpmdevtools && rpmdev-setuptree
+
 
 
 sudo yum -y install rpmdevtools && rpmdev-setuptree
