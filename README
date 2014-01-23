@@ -1,14 +1,15 @@
 RPM Spec files for building correct Oracle JVM RPM packages based on jpackage spec 
-files. 
-Preparations:
+files.
 
+Preparations for rpmbuild:
+----
+    
     sudo yum -y install rpmdevtools && rpmdev-setuptree
 
 
 
-sudo yum -y install rpmdevtools && rpmdev-setuptree
-
-sudo yum -y install libtool automake autoconf
+Rebuilding from Source:
+----
 
 For building no-src rpm use NoSource option in spec file.
 
