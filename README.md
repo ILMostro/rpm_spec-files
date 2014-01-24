@@ -1,7 +1,8 @@
 RPM Spec files
 ==============
 
-RPM Spec files for building correct Oracle JVM RPM packages based on [jpackage](http://www.jpackage.org/develdocs.php#rebuilding) spec 
+RPM Spec files for building correct Oracle JVM RPM packages based on
+[jpackage](http://www.jpackage.org/develdocs.php#rebuilding) spec 
 files.
 
 Preparations for rpmbuild:
@@ -11,7 +12,7 @@ Preparations for rpmbuild:
 
 
 
-Rebuilding from Source:
+Rebuilding oracle jdk from Source:
 -----------------------
 
 For building no-src rpm use NoSource option in spec file.
