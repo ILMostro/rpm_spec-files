@@ -7,15 +7,15 @@
 %define desktop_file_utils_ver  0.9
 #%endif
 
-%define firefox_app_id          \{ec8030f7-c20a-464f-9b0e-13a3a9e97384\}
+%define firefox_app_id          \{972ce4c6-7e08-4474-a285-3208198ce6fd\}
 
 %define mozappdir               %{_libdir}/%{name}
 %define langpackdir             %{mozappdir}/langpacks
 
 # xulrunner_version matches the firefox package.
 # xulrunner_version_max is first next incompatible xulrunner version
-%define xulrunner_version       10.0.3-1
-%define xulrunner_version_max   10.1
+%define xulrunner_version       28.0a2
+%define xulrunner_version_max   28.1
 
 %define official_branding       1
 %define build_langpacks         1
@@ -32,7 +32,7 @@
 
 Summary:        Mozilla Firefox Web browser
 Name:           firefox
-Version:        10.0.3
+Version:        28.0a2
 Release:        1%{?prever}%{?dist}
 URL:            http://www.mozilla.org/projects/firefox/
 License:        MPLv1.1 or GPLv2+ or LGPLv2+
@@ -61,8 +61,8 @@ Patch2:         mozilla-python.patch
 #%endif
 
 # RPM specific patches
-Patch11:        firefox-10.0-default.patch
-Patch12:        firefox-10.0-enable-addons.patch
+Patch11:        firefox-28.0-default.patch
+Patch12:        firefox-28.0-enable-addons.patch
 #%if !(0%{?rhel} > 5)
 Patch22:        xulrunner-gc-sections-ppc.patch
 #%endif
