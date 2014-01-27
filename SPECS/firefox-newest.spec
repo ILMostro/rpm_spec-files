@@ -7,7 +7,7 @@
 %define desktop_file_utils_ver  0.9
 #%endif
 
-%define firefox_app_id          \{972ce4c6-7e08-4474-a285-3208198ce6fd\}
+%define firefox_app_id          \{ec8030f7-c20a-464f-9b0e-13a3a9e97384\}
 
 %define mozappdir               %{_libdir}/%{name}
 %define langpackdir             %{mozappdir}/langpacks
@@ -15,7 +15,7 @@
 # xulrunner_version matches the firefox package.
 # xulrunner_version_max is first next incompatible xulrunner version
 %define xulrunner_version       28.0a2
-%define xulrunner_version_max   28.1
+%define xulrunner_version_max   28.0a2
 
 %define official_branding       1
 %define build_langpacks         1
@@ -24,10 +24,12 @@
 %define ext_version esr
 
 %if ! %{official_branding}
-%define cvsdate     20080327
+# %define cvsdate     20080327
+# %define cvsdate     20140126
+%define cvsdate     20140126004002
 %define nightly     .cvs%{cvsdate}
-%define prever      b3
-%define tarballdir  mozilla-beta
+%define prever      a2
+%define tarballdir  mozilla-aurora
 %endif
 
 Summary:        Mozilla Firefox Web browser
@@ -40,7 +42,7 @@ Group:          Applications/Internet
 # From ftp://ftp.mozilla.org/pub/firefox/releases/%{version}%{?pretag}/source
 Source0:        firefox-%{version}%{?prever}%{?ext_version}.source.tar.bz2
 %if %{build_langpacks}
-Source1:        firefox-langpacks-%{version}%{?ext_version}-20120306.tar.bz2
+Source1:        firefox-langpacks-%{version}%{?ext_version}-2014-01-26-00-40-02.tar.bz2
 %endif
 Source10:       firefox-mozconfig
 Source11:       firefox-mozconfig-branded
