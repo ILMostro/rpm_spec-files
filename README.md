@@ -12,7 +12,9 @@ or the nightly build of Firefox, which is not hosted in most distributions'
 repositories.
 
 
-RPM Spec files for building correct Oracle JVM RPM packages based on
+
+
+**RPM Spec files for building correct Oracle JVM RPM packages based on
 [jpackage](http://www.jpackage.org/develdocs.php#rebuilding) spec 
 files.
 
