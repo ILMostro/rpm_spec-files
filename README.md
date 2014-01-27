@@ -14,9 +14,6 @@ repositories.
 
 
 
-**RPM Spec files for building correct Oracle JVM RPM packages based on
-[jpackage](http://www.jpackage.org/develdocs.php#rebuilding) spec 
-files.
 
 Preparations for rpmbuild:
 --------------------------
@@ -24,9 +21,10 @@ Preparations for rpmbuild:
     sudo yum -y install rpmdevtools && rpmdev-setuptree
 
 
+RPM Spec files for building correct Oracle JVM RPM packages based on [jpackage](http://www.jpackage.org/develdocs.php#rebuilding) spec files.
+-----------------------
 
 Rebuilding oracle jdk from Source:
------------------------
 
 For building no-src rpm use NoSource option in spec file.
 
