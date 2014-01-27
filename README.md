@@ -1,6 +1,17 @@
 RPM Spec files
 ==============
 
+Collection of RPM `.spec` files for a number of popular and/or abandoned rpmbuild
+projects
+
+This project aims to facilitate the continuation of abandoned projects with
+respect to the creation and/or compilation of rpm-packages of popular programs
+and applications; one such program is Mozilla's 
+[Firefox-Aurora](http://www.mozilla.org/en-US/firefox/aurora/),
+or the nightly build of Firefox, which is not hosted in most distributions' 
+repositories.
+
+
 RPM Spec files for building correct Oracle JVM RPM packages based on
 [jpackage](http://www.jpackage.org/develdocs.php#rebuilding) spec 
 files.
